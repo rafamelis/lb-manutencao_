@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Marido de Aluguel - serviços domésticos com qualidade, pontualidade e preço justo. Hidráulica, elétrica, pintura e muito mais." />
+  <title>Lucas Ribeiro - Marido de Aluguel</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- Estilos próprios -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════ NAVBAR -->
+  <nav class="navbar navbar-expand-lg" aria-label="Menu principal">
+    <div class="container">
+
+      <a class="navbar-brand" href="#">
+        <i class="bi bi-tools icon-wrench" aria-hidden="true"></i>
+        Marido de <span>aluguel</span>
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navMenu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+        aria-label="Abrir menu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1 py-3 py-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="#clientes">Clientes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#orcamento">Orçamento</a></li>
+          <li class="nav-item ms-lg-3">
+            <a
+              class="nav-link nav-cta"
+              href="https://wa.me/5521975489498?text=Olá,%20gostaria%20de%20um%20orçamento!"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="bi bi-whatsapp me-1" aria-hidden="true"></i>
+              Chamar no WhatsApp
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════ HERO -->
+  <section id="hero" aria-labelledby="hero-title">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+
+        <!-- Texto -->
+        <div class="col-lg-6">
+
+          <h1 id="hero-title" class="hero-title">
+            Quem resolve <em>tudo</em><br>
+            em casa, sem enrolação
+          </h1>
+
+          <p class="hero-sub">
+            Serviços domésticos com qualidade, pontualidade e preço justo.
+            Do pequeno reparo à reforma é só chamar.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3 hero-cta-group">
+            <a
+              href="https://wa.me/5521975489498?text=Olá,%20gostaria%20de%20um%20orçamento!"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-whatsapp"
+            >
+              <i class="bi bi-whatsapp" aria-hidden="true"></i>
+              Pedir orçamento grátis
+            </a>
+            <a href="#servicos" class="btn-outline-amber">Ver serviços</a>
+          </div>
+
+          <div class="hero-badge">
+            <i class="bi bi-shield-check" aria-hidden="true"></i>
+            Serviço garantido e profissional
+          </div>
+        </div>
+
+        <!-- Ícone decorativo -->
+        <div class="col-lg-6">
+          <div class="hero-img-wrap">
+            <div class="hero-icon-bg" aria-hidden="true">
+              <i class="bi bi-tools"></i>
+            </div>
+
+            <div class="hero-stat s1" aria-hidden="true">
+              <i class="bi bi-emoji-smile-fill" style="color:var(--amber); font-size:1.4rem;"></i>
+              <div>
+                <strong>+200</strong>
+                <span>Clientes<br>atendidos</span>
+              </div>
+            </div>
+
+            <div class="hero-stat s2" aria-hidden="true">
+              <i class="bi bi-star-fill" style="color:var(--amber); font-size:1.4rem;"></i>
+              <div>
+                <strong>4.9</strong>
+                <span>Avaliação<br>média</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ STATS STRIP -->
+  <div class="stats-strip" aria-label="Números do negócio">
+    <div class="container">
+      <div class="row text-center gy-4">
+
+        <div class="col-6 col-md-3 stat-item reveal">
+          <span class="stat-number" data-target="200">0</span>
+          <span class="stat-label">Clientes atendidos</span>
+        </div>
+
+        <div class="col-6 col-md-3 stat-item reveal">
+          <span class="stat-number" data-target="8">0</span>
+          <span class="stat-label">Anos de experiência</span>
+        </div>
+
+        <div class="col-6 col-md-3 stat-item reveal">
+          <span class="stat-number" data-target="12">0</span>
+          <span class="stat-label">Tipos de serviço</span>
+        </div>
+
+        <div class="col-6 col-md-3 stat-item reveal">
+          <span class="stat-number" data-target="98">0</span>
+          <span class="stat-label">% de satisfação</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════ SERVIÇOS -->
+  <section id="servicos" aria-labelledby="servicos-title">
+    <div class="container">
+
+      <div class="text-center mb-5 reveal">
+        <p class="section-label">O que faço</p>
+        <h2 id="servicos-title" class="section-title">Serviços disponíveis</h2>
+        <p class="section-sub mx-auto">
+          Resolvo os problemas da sua casa com agilidade e materiais de qualidade.
+        </p>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-sm-6 col-lg-4 reveal">
+          <div class="service-card">
+            <div class="service-icon" aria-hidden="true"><i class="bi bi-droplet-half"></i></div>
+            <h4>Instalações Hidráulicas</h4>
+            <p>Torneiras, registros, chuveiros, caixas d'água e reparos em tubulações com rapidez e segurança.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 reveal">
+          <div class="service-card">
+            <div class="service-icon" aria-hidden="true"><i class="bi bi-lightning-charge"></i></div>
+            <h4>Elétrica Residencial</h4>
+            <p>Troca de tomadas, interruptores, instalação de luminárias, ventiladores de teto e quadros de luz.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 reveal">
+          <div class="service-card">
+            <div class="service-icon" aria-hidden="true"><i class="bi bi-brush"></i></div>
+            <h4>Pintura</h4>
+            <p>Pintura interna e externa, retoque de parede, impermeabilização e acabamento de qualidade.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 reveal">
+          <div class="service-card">
+            <div class="service-icon" aria-hidden="true"><i class="bi bi-grid-3x3"></i></div>
+            <h4>Ar Condicionado</h4>
+            <p>Instalação de Ar Condicionado – Manutenção – Limpeza – Carga de Gás, entre outros.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 reveal">
+          <div class="service-card">
+            <div class="service-icon" aria-hidden="true"><i class="bi bi-door-open"></i></div>
+            <h4>Marcenaria & Montagem</h4>
+            <p>Montagem de móveis, ajuste de portas e janelas, instalação de prateleiras e armários.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 reveal">
+          <div class="service-card">
+            <div class="service-icon" aria-hidden="true"><i class="bi bi-house-gear"></i></div>
+            <h4>Manutenção Geral</h4>
+            <p>Reparos diversos, instalação de TVs e ar-condicionado, fixação de objetos e muito mais.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ CLIENTES -->
+  <section id="clientes" aria-labelledby="clientes-title">
+    <div class="container">
+
+      <div class="text-center mb-5 reveal">
+        <h2 id="clientes-title" class="section-title">O que nossos clientes dizem</h2>
+        <p class="section-sub mx-auto">
+          Mais de 200 famílias confiam no nosso serviço.<br> Veja o que elas falam:
+        </p>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+            <p class="testimonial-text">
+              Precisava consertar um vazamento urgente e o serviço foi feito com rapidez e muita qualidade. Recomendo!            </p>
+            <div class="testimonial-author">
+              <div class="avatar" style="background:#6366F1;" aria-hidden="true">AM</div>
+              <div>
+                <strong>Ana Maria S.</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+            <p class="testimonial-text">
+             Fez a instalação das luminárias e tomadas com muito cuidado. Serviço impecável e preço justo.
+            </p>
+            <div class="testimonial-author">
+              <div class="avatar" style="background:#EC4899;" aria-hidden="true">CR</div>
+              <div>
+                <strong>Carlos Rodrigues</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+            <p class="testimonial-text">
+              Gostei muito do resultado. Capricho nos detalhes e ótimo atendimento do início ao fim.
+            </p>
+            <div class="testimonial-author">
+              <div class="avatar" style="background:#10B981;" aria-hidden="true">FL</div>
+              <div>
+                <strong>Fernanda Lima</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+            <p class="testimonial-text">
+              Instalou meu ar-condicionado rapidamente e explicou todos os cuidados necessários. Excelente atendimento.
+            </p>
+            <div class="testimonial-author">
+              <div class="avatar" style="background:#F59E0B;" aria-hidden="true">RM</div>
+              <div>
+                <strong>Roberto Melo</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+            <p class="testimonial-text">
+              Excelente trabalho na montagem dos armários. Organizado, cuidadoso e muito eficiente!
+            </p>
+            <div class="testimonial-author">
+              <div class="avatar" style="background:#3B82F6;" aria-hidden="true">PS</div>
+              <div>
+                <strong>Patrícia Souza</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal">
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+            <p class="testimonial-text">
+              Resolvi vários pequenos reparos da casa em uma única visita. Prático, rápido e muito competente!
+            </p>
+            <div class="testimonial-author">
+              <div class="avatar" style="background:#EF4444;" aria-hidden="true">MN</div>
+              <div>
+                <strong>Marcos Nunes</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ ORÇAMENTO -->
+  <section id="orcamento" aria-labelledby="orcamento-title">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+
+        <!-- Passo a passo -->
+        <div class="col-lg-6 reveal">
+          <p class="section-label">Como funciona</p>
+          <h2 id="orcamento-title" class="section-title">
+            Solicitar orçamento<br>é simples assim
+          </h2>
+          <p class="text-muted mb-4" style="font-size:.95rem; line-height:1.7;">
+            Sem burocracia, sem visita desnecessária. Em minutos você sabe exatamente
+            o que vai custar e quando o serviço pode ser feito.
+          </p>
+
+          <div class="step-wrap">
+
+            <div class="step">
+              <div class="step-num" aria-hidden="true">01</div>
+              <div class="step-body">
+                <h4>Manda uma mensagem no WhatsApp</h4>
+                <p>Descreva o problema ou serviço que precisa. Pode mandar foto também — fica mais fácil de avaliar.</p>
+              </div>
+            </div>
+            <div class="step-divider" aria-hidden="true"></div>
+
+            <div class="step">
+              <div class="step-num" aria-hidden="true">02</div>
+              <div class="step-body">
+                <h4>Receba o orçamento na hora</h4>
+                <p>Respondo em até 30 minutos com o valor, prazo e o que vai ser necessário para o serviço.</p>
+              </div>
+            </div>
+            <div class="step-divider" aria-hidden="true"></div>
+
+            <div class="step">
+              <div class="step-num" aria-hidden="true">03</div>
+              <div class="step-body">
+                <h4>Agendamos o melhor horário</h4>
+                <p>Você escolhe o dia e horário que funcionar melhor para você. Trabalho de segunda a sábado.</p>
+              </div>
+            </div>
+            <div class="step-divider" aria-hidden="true"></div>
+
+            <div class="step">
+              <div class="step-num" aria-hidden="true">04</div>
+              <div class="step-body">
+                <h4>Serviço feito com garantia</h4>
+                <p>Chego no horário, resolvo o problema e entrego o serviço com garantia. É só isso.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Caixa de contato -->
+        <div class="col-lg-5 offset-lg-1 reveal">
+          <div class="contact-box">
+            <h3>Fale comigo agora</h3>
+            <p>Atendimento rápido e orçamento gratuito. Sem compromisso!</p>
+
+            <a
+              href="https://wa.me/5521975489498?text=Olá,%20gostaria%20de%20um%20orçamento!"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-whatsapp d-flex justify-content-center mb-3"
+            >
+              <i class="bi bi-whatsapp" aria-hidden="true"></i>
+              Chamar no WhatsApp
+            </a>
+
+            <div class="contact-info-item">
+              <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+              <span>(21) 97548-9498</span>
+            </div>
+            <div class="contact-info-item">
+              <i class="bi bi-clock-fill" aria-hidden="true"></i>
+              <span>Seg–Sáb, das 7h às 19h</span>
+            </div>
+            <div class="contact-info-item">
+              <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+              <span>Estado do Rio de Janeiro</span>
+            </div>
+            <div class="contact-info-item">
+              <i class="bi bi-shield-check-fill" aria-hidden="true"></i>
+              <span>Serviço com garantia e nota fiscal</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ FOOTER -->
+  <footer>
+    <div class="container">
+
+      <div class="row align-items-center gy-3 pb-4 border-bottom footer-divider">
+        <div class="col-md-4">
+          <div class="footer-brand"><span>Lucas</span> O marido de aluguel</div>
+        </div>
+        <div class="col-md-4 text-md-center mt-3 mt-md-0">
+          <div class="d-flex justify-content-md-center gap-4 footer-links">
+            <a href="#servicos">Serviços</a>
+            <a href="#clientes">Clientes</a>
+            <a href="#orcamento">Orçamento</a>
+          </div>
+        </div>
+        <div class="col-md-4 text-md-end mt-3 mt-md-0">
+          <a
+            href="https://wa.me/5521975489498?text=Olá,%20gostaria%20de%20um%20orçamento!"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-whatsapp"
+            style="font-size:.9rem; padding:.6rem 1.2rem;"
+          >
+            <i class="bi bi-whatsapp" aria-hidden="true"></i>
+            (21) 97548-9498
+          </a>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center pt-4 gap-2">
+        <p>© 2025 - Marido de Aluguel. Todos os direitos reservados.</p>
+        <p>Feito com <span style="color:var(--amber);">♥</span> para quem precisa de serviço de qualidade</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════════ FLOATING BUTTONS -->
+  <button
+    type="button"
+    class="scroll-top-btn"
+    id="scrollTopBtn"
+    aria-label="Subir para o topo"
+  >
+    <i class="bi bi-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <a
+    href="https://wa.me/5521975489498?text=Olá,%20gostaria%20de%20um%20orçamento!"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="wa-float"
+    aria-label="Chamar no WhatsApp"
+  >
+    <i class="bi bi-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script próprio -->
+  <script src="main.js"></script>
+
+</body>
+</html>
