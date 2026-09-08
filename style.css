@@ -105,7 +105,7 @@ h1, h2, h3, h4 {
   position: absolute;
   bottom: -2px;
   left: 0;
-  width: 100%;
+  width: 95%;
   height: 60px;
   background: var(--white);
   clip-path: polygon(0 100%, 100% 0, 100% 100%);
