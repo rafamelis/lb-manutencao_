@@ -44,21 +44,32 @@ h1, h2, h3, h4 {
 
 .navbar-brand {
   font-family: 'Oswald', sans-serif;
-  font-size: 1.6rem;
+  font-size: clamp(1.1rem, 2vw, 1.6rem);
   font-weight: 700;
   color: var(--white) !important;
   display: flex;
   align-items: center;
   gap: .5rem;
+  white-space: nowrap;
 }
 
 .navbar-brand span {
   color: var(--amber);
 }
 
-.navbar-brand .icon-wrench {
-  font-size: 1.4rem;
-  color: var(--amber);
+.logo-img {
+  width: 2.2rem;
+  height: 2.2rem;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
+@media (max-width: 576px) {
+  .logo-img {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
 }
 
 .nav-cta {
